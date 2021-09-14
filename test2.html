@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="XXX...">
+    <meta name="description" content="YYYY...">
+    <meta name="author" content="ZZZZ...">
+    <title>IoT SAU 2021</title>
+    <link rel="shortcut icon" href="./images/rabbit.ico" type="image/x-icon">
+</head>
+
+<body>
+    <h1>-- Form Tag</h1>
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            ชื่อ <input type="text" name="emp_name" id="">
+            <br><br>
+            ปีเกิด <input type="number" name="emp_byear" id="">
+            <br><br>
+            รหัสผ่าน <input type="password" name="emp_pwd" id="">
+            <br><br>
+
+        </fieldset>
+       
+        <fieldset>
+            <legend>ข้อมูลทั่วไป</legend>
+            เพศ
+            <!-- radio ต้องเลือก และเลือกได้แค่ 1 -->
+            <input type="radio" name="emp_sex" id="" value="male"> ชาย
+            <input type="radio" name="emp_sex" id="" value="female"> หญิง
+            <input type="radio" name="emp_sex" id="" checked value="unisex"> ทางเลือก
+            <br><br>
+            การศึกษาสูงสุด
+            <!-- select/option ให้เลือก 1. เลือกได้แค่หนึ่ง 2. เลือกได้มากว่าหนึ่ง-->
+            <select name="emp_educate" id="">
+                <option value="ตรี">ปริญญาตรี</option>
+                <option value="โท">ปริญญาโท</option>
+                <option value="เอก">ปริญญาเอก</option>
+            </select>
+            <br><br>
+            คำนำหน้า
+            <select name="emp_title" id="">
+                <option value="1">เด็กชาย</option>
+                <option value="2">เด็กหญิง</option>
+                <option value="3">นาย</option>
+                <option value="4">นาง</option>
+                <option value="5">นางสาว</option>
+            </select>
+            <br><br>
+            เครื่องดืมที่ชอบ
+            <!-- select/option เลือกได้มากว่าหนึ่ง multiple ไม่แนะนำ-->
+            <select name="emp_drink" id="" size="4" multiple>
+                <option value="น้ำส้ม">น้ำส้ม</option>
+                <option value="กาแฟ">กาแฟ</option>
+                <option value="ชา">ชา</option>
+                <option value="น้ำแดง">น้ำแดง</option>
+                <option value="โค้ก">โค้ก</option>
+                <option value="แฟนต้า">แฟนต้า</option>
+            </select>
+            <br><br>
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
