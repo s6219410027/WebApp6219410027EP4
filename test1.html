@@ -28,7 +28,57 @@
         <br><br>
         เวลาเกิด <input type="time" name="emp_btime" id="">
         <br><br>
-
+        เพศ
+        <!-- radio ต้องเลือก และเลือกได้แค่ 1 -->
+        <input type="radio" name="emp_sex" id="" value="male"> ชาย
+        <input type="radio" name="emp_sex" id="" value="female"> หญิง
+        <input type="radio" name="emp_sex" id="" checked value="unisex"> ทางเลือก
+        <br><br>
+        การศึกษาสูงสุด
+        <!-- select/option ให้เลือก 1. เลือกได้แค่หนึ่ง 2. เลือกได้มากว่าหนึ่ง-->
+        <select name="emp_educate" id="">
+            <option value="ตรี">ปริญญาตรี</option>
+            <option value="โท">ปริญญาโท</option>
+            <option value="เอก">ปริญญาเอก</option>
+        </select>
+        <br><br>
+        คำนำหน้า
+        <select name="emp_title" id="">
+            <option value="1">เด็กชาย</option>
+            <option value="2">เด็กหญิง</option>
+            <option value="3">นาย</option>
+            <option value="4">นาง</option>
+            <option value="5">นางสาว</option>
+        </select>
+        <br><br>
+        เครื่องดืมที่ชอบ
+        <!-- select/option เลือกได้มากว่าหนึ่ง multiple ไม่แนะนำ-->
+        <select name="emp_drink" id="" size="4" multiple>
+            <option value="น้ำส้ม">น้ำส้ม</option>
+            <option value="กาแฟ">กาแฟ</option>
+            <option value="ชา">ชา</option>
+            <option value="น้ำแดง">น้ำแดง</option>
+            <option value="โค้ก">โค้ก</option>
+            <option value="แฟนต้า">แฟนต้า</option>
+        </select>
+        <br><br>
+        เครื่องดืมที่ชอบ 2
+        <input type="checkbox" name="emp_drink1" id=""value="น้ำส้ม">น้ำส้ม
+        <input type="checkbox" name="emp_drink2" id=""value="กาแฟ">กาแฟ
+        <input type="checkbox" name="emp_drink3" id=""value="ชา">ชา
+        <input type="checkbox" name="emp_drink4" id=""value="น้ำแดง">น้ำแดง
+        <input type="checkbox" name="emp_drink5" id=""value="โค้ก">โค้ก
+        <input type="checkbox" name="emp_drink6" id=""value="แฟนต้า">แฟนต้า
+        <br><br>
+        เลือกไฟล์งาน 
+        <input type="file" name="emp_file" id="" accept="image/*">
+        <br><br>
+        หมายเหตุ <textarea name="" id="" cols="20" rows="5"></textarea>
+        <br><br>
+        <input type="submit" value="ตกลง">
+        <input type="reset" value="ยกเลิก">
+        <button>บันทึก Save</button>    
+        <button>ยกเลิก ไม่เอา Cancel</button>
 
     </form>
 
